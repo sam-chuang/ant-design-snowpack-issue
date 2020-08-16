@@ -1,1 +1,27 @@
-import e from"../web_modules/react.js";import"../web_modules/antd/dist/antd.css.proxy.js";import{Layout as n,Menu as _,Breadcrumb as t}from"../web_modules/antd.js";const{SubMenu:l}=_,{Header:m,Content:r,Sider:E}=n;function a(){return e.createElement(n,null,e.createElement(E,{width:200},e.createElement(_,{mode:"inline"},e.createElement(l,{key:"test",title:"Menu Test"},e.createElement(_.Item,{key:"1"},"Menu Item Test")))),e.createElement(m,null,e.createElement(t,null,e.createElement(t.Item,null,"Breadcrumb"),e.createElement(t.Item,null,"Test"),e.createElement(t.Item,null,"App"))),e.createElement(r,null,"Content Test"))}export default a;
+import React from '../web_modules/react.js';
+import "../web_modules/antd/dist/antd.css.proxy.js";
+import { Layout, Menu, Breadcrumb } from "../web_modules/antd.js";
+const {
+  SubMenu
+} = Menu;
+const {
+  Header,
+  Content,
+  Sider
+} = Layout;
+
+function App() {
+  return /*#__PURE__*/React.createElement(Layout, null, /*#__PURE__*/React.createElement(Sider, {
+    width: 200
+  }, /*#__PURE__*/React.createElement(Menu, {
+    mode: "inline"
+  }, /*#__PURE__*/React.createElement(SubMenu, {
+    key: "test",
+    title: "Menu Test"
+  }, /*#__PURE__*/React.createElement(Menu.Item, {
+    key: "1"
+  }, "Menu Item Test")))), /*#__PURE__*/React.createElement(Header, null, /*#__PURE__*/React.createElement(Breadcrumb, null, /*#__PURE__*/React.createElement(Breadcrumb.Item, null, "Breadcrumb"), /*#__PURE__*/React.createElement(Breadcrumb.Item, null, "Test"), /*#__PURE__*/React.createElement(Breadcrumb.Item, null, "App"))), /*#__PURE__*/React.createElement(Content, null, "Content Test"));
+}
+
+export default App;
+//# sourceMappingURL=App.js.map
