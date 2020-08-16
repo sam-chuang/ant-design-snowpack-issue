@@ -4,5 +4,5 @@ Issue: React.createElement: type is invalid -- expected a string (for built-in c
 
 Steps:
 
-> npm install
-> npm start
+1. npm install
+2. npm start
